@@ -32,6 +32,7 @@ img {
   margin: 0 auto;
   background-size: cover;
   min-height: 540px;
+  position: relative;
 }
 .user-menu {
   text-align: center;
@@ -85,11 +86,21 @@ img {
   font-size: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 110px;
+  position: absolute;
   cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 30%;
+  display: inline;
+  max-height: 25px;
 }
 .logo:hover {
   transform: scale(1.05);
+}
+.hero-message {
+  margin-top: 200px;
 }
 .hero-message__major {
   color: var(--main-title-color);
@@ -314,6 +325,8 @@ img {
     position: absolute;
     left: 0;
     top: 0;
+    display: block;
+    max-width: 200px;
   }
   .user-menu {
     position: absolute;
@@ -326,7 +339,7 @@ img {
   }
   .hero-message {
     margin: 0;
-    padding-top: 160px;
+    padding-top: 260px;
   }
   .partners-list {
     margin: 0 auto;
