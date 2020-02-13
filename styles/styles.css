@@ -117,6 +117,8 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .hero-message__minor {
@@ -127,6 +129,8 @@ img {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .find-button {
@@ -187,6 +191,7 @@ img {
   margin-bottom: 30px;
   list-style-type: none;
   text-align: center;
+  align-items: flex-start;
 }
 .partners-list__item {
   margin: 0;
@@ -295,15 +300,13 @@ img {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  
-
+  margin-bottom: 15px;
 }
 .partners-list__description {
   font-family: var(--minor-font-family);
   font-size: 14px;
   font-weight: 300;
   text-align: center;
-  padding-top: 20px;
   margin-bottom: 20px;
 }
 .see-button {
@@ -321,12 +324,16 @@ img {
   cursor: pointer;
 }
 .see-button:hover {
+  height: 38px;
+  width: 278px;
   background-color: var(--main-color);
   color: var(--main-hover-color);
   border: solid 2px;
   border-color: var(--main-hover-color);
 }
 .see-button:focus {
+  height: 38px;
+  width: 276px;
   background-color: var(--main-color);
   color: var(--main-hover-color);
   border: solid 2px;
@@ -336,17 +343,16 @@ img {
   .container {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-  
+    max-width: 748px;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 45px;
   }
   .user-menu {
-    position: absolute;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin: 0;
     right: 0;
-    top: 0;
+    margin-left: auto;
     text-align: center;
-    margin-bottom: 0;
   }
   .hero {
     position: relative;
@@ -355,12 +361,9 @@ img {
     min-height: 700px;
   }
   .logo {
-    margin-left: 50px;
-    margin-top: 50px;
-    position: absolute;
+    margin: 0;
     left: 0;
     top: 0;
-    display: block;
     max-width: 200px;
   }
   .hero-message {
@@ -373,14 +376,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     max-width: 532px;
-    
   }
   .partners-list__item {
     margin: 0;
-   
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     flex-basis: 0;
@@ -398,9 +398,13 @@ img {
   }
   .partners-list__title {
     margin: 0 auto;
+    margin-bottom: 15px;
   }
   .partners-list__description {
     margin: 0;
+  }
+  .gap {
+    display: none;
   }
 }
 @media screen and (min-width: 940px) {
@@ -414,13 +418,13 @@ img {
     max-width: 942px;
   }
   .partners-list__item {
-    /* display: flex;
-    flex-direction: column;
+    display: flex;
     align-items: center;
-    justify-content: center; */
     flex-basis: calc(25% - 25px);
     margin-top: 25px;
     margin-bottom: 25px;
   }
   .partners-list__item:not(:nth-child(4n)) {
     margin-right: 25px;
+  }
+}
